@@ -1,0 +1,50 @@
+name: 💡 Запрос на разработку новой функциональности
+description: Типовое требование на разработку новой функциональности
+title: "[feat]: "
+labels: [ "feature" ]
+
+body:
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Описание проблемы
+      description: Четкое и краткое описание проблемы.
+      placeholder: ex. У меня не получается быстро сделать [...].
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Предлагаемое решение
+      description: Четкое и краткое описание того, что вы хотите, чтобы произошло.
+      placeholder: ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternative-solutions
+    attributes:
+      label: Альтернативные варианты решения проблемы
+      description: Четкое и краткое описание всех альтернативных решений.
+      placeholder: ...
+    validations:
+      required: false
+
+  - type: input
+    id: project-link
+    attributes:
+      label: Ссылка на макеты
+      description: Полная ссылка на макеты, включая домен.
+      placeholder: ex. https://www.figma.com/file/0NZm7JbEUxywKJaJMMoORD
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Дополнительные сведения
+      description: Любая связанная информация или скриншоты, касающиеся запроса функциональности.
+      placeholder: ...
+    validations:
+      required: false

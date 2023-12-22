@@ -1,0 +1,114 @@
+name: 🐞 Отчет об ошибке
+description: Типовой отчет об ошибке
+title: "[bug]: "
+labels: [ "bug" ]
+
+body:
+  - type: textarea
+    id: general-description
+    attributes:
+      label: Общее описание проблемы
+      description: Опишите проблему, чтобы было очевидно, что поведение системы некорректно.
+      placeholder: ex. Возникает ошибка при авторизации через логин и пароль.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Как повторить
+      description: Последовательность шагов, которые необходимо воспроизвести, чтобы воспроизвести ошибку.
+      placeholder: |
+        ex.
+        1. Нажимаем кнопку "Sign Out" на экране Settings.
+        2. Автоматически происходит редирект на /sign-in.
+        3. Нажимаем кнопку "Login".
+        4. Открываем F12 -> Network.
+        5. Вводим email и пароль. И нажимаем кнопку "Login".
+        6. Видим проблемный POST-запрос.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Фактический результат
+      description: Опишите, какой результат вы получили.
+      placeholder: ex. Ошибка при запросе на авторизацию.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Ожидаемое поведение
+      description: Опишите, что ожидалось в идеальном случае.
+      placeholder: ex. Авторизация проходит без ошибок.
+    validations:
+      required: true
+
+  - type: input
+    id: project-link
+    attributes:
+      label: Ссылка на проект
+      description: Полная ссылка на проект, включая домен.
+      placeholder: ex. https://merlinclone.dev/dashboard/projects/edit/UHJvamVjdE5vZGU6MTM1OQ==
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Операционная система
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Браузер, где была замечена проблема
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Microsoft Edge
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: application-version
+    attributes:
+      label: Версия приложения
+      description: Полный номер версии приложения.
+      placeholder: ex. Авторизация проходит без ошибок.
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты
+      description: Скриншоты, демонстрирующие ошибку.
+      placeholder: Вставьте из буфера обмена или перетяните файлы на это поле.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Лог консоли и HAR
+      description: Необходимые артефакты для диагностики проблемы.
+      placeholder: Вставьте из буфера обмена или перетяните файлы на это поле.
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Дополнительные сведения
+      description: Любая информация, которая может быть полезна при выявлении ошибки.
+      placeholder: Вставьте из буфера обмена или перетяните файлы на это поле.
