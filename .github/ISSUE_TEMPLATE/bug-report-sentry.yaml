@@ -2,6 +2,7 @@ name: 🐞 Отчет об ошибке (Sentry)
 description: Типовой отчет об ошибке, перенесенной из Sentry
 title: "[bug]: "
 labels: [ "bug" ]
+projects: [ "merlinclone/11" ]
 
 body:
   - type: input
