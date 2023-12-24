@@ -2,6 +2,7 @@ name: 🐞 Отчет об ошибке
 description: Типовой отчет об ошибке
 title: "[bug]: "
 labels: [ "bug" ]
+projects: [ "merlinclone/11" ]
 
 body:
   - type: textarea
