@@ -2,7 +2,7 @@ name: ❔ Поручение
 description: Вопрос или задача, не предполагающая разработку программного кода
 title: "[question]: "
 labels: [ "question" ]
-projects: [ "merlinclone/11" ]
+projects: [ "merlinclone/32" ]
 
 body:
   - type: textarea
